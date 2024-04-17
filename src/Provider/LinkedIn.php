@@ -22,7 +22,7 @@ class LinkedIn extends AbstractProvider
      *
      * @var array
      */
-    public $defaultScopes = ['email', 'profile'];
+    public $defaultScopes = ['email', 'profile', 'openid'];
 
     /**
      * Requested fields in scope, seeded with default values
@@ -114,7 +114,7 @@ class LinkedIn extends AbstractProvider
             'projection' => '(' . implode(',', $this->fields) . ')'
         ]);
 
-        return 'https://api.linkedin.com/v2/me?' . urldecode($query);
+        return 'https://api.linkedin.com/v2/userinfo?' . urldecode($query);
     }
 
     /**
