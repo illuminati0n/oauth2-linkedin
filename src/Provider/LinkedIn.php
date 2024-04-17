@@ -10,6 +10,7 @@ use League\OAuth2\Client\Provider\Exception\LinkedInAccessDeniedException;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Token\LinkedInAccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
+use League\OAuth2\Client\Provider\AbstractProvider;
 use Psr\Http\Message\ResponseInterface;
 
 class LinkedIn extends AbstractProvider
