@@ -1,6 +1,6 @@
 <?php
 
-namespace League\OAuth2\Client\Token;
+namespace illuminati0n\OAuth2\Client\Token;
 
 class LinkedInAccessToken extends AccessToken
 {
