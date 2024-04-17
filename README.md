@@ -29,17 +29,17 @@ If you encounter the following, or something similar, this policy is being enfor
 To install, use composer:
 
 ```
-composer require league/oauth2-linkedin
+composer require illuminati0n/oauth2-linkedin
 ```
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using `\League\OAuth2\Client\Provider\LinkedIn` as the provider.
+Usage is the same as The League's OAuth client, using `\illuminati0n\OAuth2\Client\Provider\LinkedIn` as the provider.
 
 ### Authorization Code Flow
 
 ```php
-$provider = new League\OAuth2\Client\Provider\LinkedIn([
+$provider = new illuminati0n\OAuth2\Client\Provider\LinkedIn([
     'clientId'          => '{linkedin-client-id}',
     'clientSecret'      => '{linkedin-client-secret}',
     'redirectUri'       => 'https://example.com/callback-url',
