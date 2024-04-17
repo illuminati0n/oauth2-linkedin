@@ -22,7 +22,7 @@ class LinkedIn extends AbstractProvider
      *
      * @var array
      */
-    public $defaultScopes = ['r_liteprofile', 'r_emailaddress'];
+    public $defaultScopes = ['email', 'profile'];
 
     /**
      * Requested fields in scope, seeded with default values
