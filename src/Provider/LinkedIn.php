@@ -31,8 +31,7 @@ class LinkedIn extends AbstractProvider
      * @see https://developer.linkedin.com/docs/fields/basic-profile
      */
     protected $fields = [
-        'id', 'firstName', 'lastName', 'localizedFirstName', 'localizedLastName',
-        'profilePicture(displayImage~:playableStreams)',
+        'sub', 'name', 'given_name', 'family_name', 'picture', 'locale', 'email', 'email_verified',
     ];
 
     /**
@@ -198,16 +197,6 @@ class LinkedIn extends AbstractProvider
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        // If current accessToken is not authorized with r_emailaddress scope,
-        // getResourceOwnerEmail will throw LinkedInAccessDeniedException, it will be caught here,
-        // and then the email will be set to null
-        // When email is not available due to chosen scopes, other providers simply set it to null, let's do the same.
-        try {
-            $email = $this->getResourceOwnerEmail($token);
-        } catch (LinkedInAccessDeniedException $exception) {
-            $email = null;
-        }
-        $response['email'] = $email;
         return new LinkedInResourceOwner($response);
     }
 
