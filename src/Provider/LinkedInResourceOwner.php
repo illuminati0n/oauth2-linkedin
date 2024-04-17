@@ -1,6 +1,7 @@
 <?php namespace illuminati0n\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Tool\ArrayAccessorTrait;
+use League\OAuth2\Client\Provider\GenericResourceOwner;
 
 /**
  * @property array $response
