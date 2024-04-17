@@ -1,6 +1,6 @@
 <?php
 
-namespace League\OAuth2\Client\Provider;
+namespace illuminati0n\OAuth2\Client\Provider;
 
 use Exception;
 use InvalidArgumentException;
