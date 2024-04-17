@@ -1,4 +1,4 @@
-<?php namespace League\OAuth2\Client\Test\Provider;
+<?php namespace illuminati0n\OAuth2\Client\Test\Provider;
 
 use InvalidArgumentException;
 use League\OAuth2\Client\Tool\QueryBuilderTrait;
